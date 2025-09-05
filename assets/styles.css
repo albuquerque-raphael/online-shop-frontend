@@ -1,0 +1,9 @@
+.card:hover { transform: translateY(-1px); transition: transform .15s ease; }
+#products .card { cursor: pointer; }
+.badge-status { text-transform: uppercase; }
+#checkoutMsg {
+  width: 100%;
+  text-align: center;
+  font-weight: 600; /* opcional */
+  color: green;     /* ou outra cor */
+}

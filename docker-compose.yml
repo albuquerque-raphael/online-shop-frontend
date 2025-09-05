@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  backend:
+    build: ../purchase-api-backend   # caminho para a API Flask (irmã do front)
+    container_name: purchase-api
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build: .                         # este repositório (interface)
+    container_name: online-shop-frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
